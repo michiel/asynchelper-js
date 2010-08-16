@@ -23,4 +23,8 @@ Example
 
     seq.start();
 
+TODO
+----
+
+Loads of stuff, this is just v0.
 
