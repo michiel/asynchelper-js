@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>asynchelper - tests</title>
+    <style type="text/css"> 
+      #content {
+        width: 95%;
+        border: 1px solid #ddd;
+      }
+    </style>
+    <script type="text/javascript" src="shiv/shiv.js"></script>
+    <script type="text/javascript">
+      shiv.addOnLoad(function() {
+        shiv.prefix = "shiv/";
+        shiv.load("shiv-domlogger");
+        shiv.load("shiv-util");
+        shiv.load("shiv-test");
+        shiv.log("Load succeeded.");
+      });
+      </script>
+    <script type="text/javascript" src="../lib/asynchelper.js"></script>
+    <script type="text/javascript" src="../lib/asynchelper-tests.js"></script>
+  </head>
+
+  <body>
+    <h1>asynchelper - tests</h1>
+    <h3>Log:</h3>
+    <ul id="logger">
+    </ul>
+
+  </body>
+
+</html>
