@@ -1,7 +1,7 @@
 asynchelper-js
 ======
 
-Simple Function to assist in running asynchronous calls.
+Simple functions to assist in running asynchronous calls.
 
 Example
 -------
@@ -23,6 +23,25 @@ Example
 
     seq.start();
 
+    var col = new Collector(
+      [
+        function(cb) {
+          shiv.log("Callback 1");
+          cb && cb();
+        },
+        function(cb) {
+          shiv.log("Callback 2");
+          cb && cb();
+        }
+      ],
+      function(cb) {
+        shiv.log("Final callback");
+        cb && cb();
+      }
+    ]);
+
+    col.start();
+
 Rationale
 ---------
 
@@ -35,7 +54,6 @@ TODO
 
 Loads of stuff, this is just v0. But to give you an idea,
 
- - Add Collector
  - Optionally make it a nodejs module
  - Add support for different loggers
  - Add test cases for the new Sequencer functionality/options
