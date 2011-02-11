@@ -1,7 +1,9 @@
 asynchelper-js
 ======
 
-Simple functions to assist in running asynchronous calls.
+The main repository has MOVED to https://github.com/michiel/sequencer-js
+
+This repo is only here for reference purposes.
 
 Example
 -------
